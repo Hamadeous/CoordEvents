@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/dashboard/:id", "destination": "/" }
+  ],
+  "redirects": [
+    {
+      "source": "/dashboard",
+      "destination": "/",
+      "statusCode": 308
+    }
+  ]
+}
