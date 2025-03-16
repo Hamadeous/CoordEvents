@@ -51,8 +51,8 @@ export default function EventParticipation() {
   if (submitted) {
     return (
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Thank you for participating!</h2>
-        <p className="text-gray-600">Your availability has been recorded.</p>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Merci de votre participation !</h2>
+        <p className="text-gray-600">Votre disponibilité a été enregistrée.</p>
       </div>
     );
   }
@@ -73,11 +73,11 @@ export default function EventParticipation() {
   return (
     <div className="max-w-2xl mx-auto">
       <style>{css}</style>
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Select Your Availability</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">Sélectionnez votre disponibilité</h1>
       <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 rounded-lg shadow">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-            Your Name
+            Votre Prénom
           </label>
           <input
             type="text"
@@ -91,7 +91,7 @@ export default function EventParticipation() {
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Select Available Days
+            Sélectionner les jours disponibles
           </label>
           <div className="border rounded-md p-4">
             <DayPicker
