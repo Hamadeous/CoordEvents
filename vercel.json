@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/event/:id", "destination": "/" },
     { "source": "/dashboard/:id", "destination": "/" }
   ],
   "redirects": [
