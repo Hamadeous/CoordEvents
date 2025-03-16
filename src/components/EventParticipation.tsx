@@ -1,3 +1,4 @@
+import { fr } from "date-fns/locale";
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { DayPicker } from 'react-day-picker';
@@ -98,6 +99,7 @@ export default function EventParticipation() {
               mode="multiple"
               selected={selectedDays}
               onSelect={setSelectedDays as (days: Date[] | undefined) => void}
+              locale={fr}
               className="mx-auto"
               modifiersStyles={{
                 selected: {
