@@ -66,7 +66,7 @@ export default function EventDashboard() {
   }, [id]);
 
   const handleCopyLink = () => {
-    const link = `${window.location.origin}/dashboard/${id}`;
+    const link = `${window.location.origin}/event/${id}`;
     navigator.clipboard.writeText(link);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
