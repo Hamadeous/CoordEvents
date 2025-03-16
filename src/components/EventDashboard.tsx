@@ -103,24 +103,24 @@ export default function EventDashboard() {
             className="flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             <Share2 className="h-4 w-4 mr-2" />
-            {copied ? 'Copied!' : 'Share Link'}
+            {copied ? 'Copié !' : 'Lien de Partage'}
           </button>
         </div>
 
         <div className="mt-8">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Participants ({participants.length})</h2>
           {participants.length === 0 ? (
-            <p className="text-gray-600">No participants yet. Share the link to invite people!</p>
+            <p className="text-gray-600">Pas encore de participants. Partagez le lien pour inviter des gens !</p>
           ) : (
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Name
+                      Prénom
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Available Dates
+                      Dates Disponibles
                     </th>
                   </tr>
                 </thead>
@@ -140,7 +140,7 @@ export default function EventDashboard() {
                             ))}
                           </ul>
                         ) : (
-                          <span className="text-gray-400">No dates selected</span>
+                          <span className="text-gray-400">Aucune date sélectionnée</span>
                         )}
                       </td>
                     </tr>
