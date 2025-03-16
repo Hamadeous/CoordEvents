@@ -37,11 +37,11 @@ export default function CreateEvent() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Create a New Event</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">Créer un Nouvel Événement</h1>
       <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 rounded-lg shadow">
         <div>
           <label htmlFor="title" className="block text-sm font-medium text-gray-700">
-            Event Title
+            Titre de l'Événement
           </label>
           <input
             type="text"
