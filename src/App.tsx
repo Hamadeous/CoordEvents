@@ -14,7 +14,7 @@ function App() {
             <div className="flex justify-between h-16 items-center">
               <div className="flex items-center">
                 <Calendar className="h-8 w-8 text-indigo-600" />
-                <span className="ml-2 text-xl font-semibold text-gray-900">ScheduleSync</span>
+                <span className="ml-2 text-xl font-semibold text-gray-900">CoordEvent</span>
               </div>
             </div>
           </div>
