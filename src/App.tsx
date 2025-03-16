@@ -25,6 +25,7 @@ function App() {
             <Route path="/" element={<CreateEvent />} />
             <Route path="/event/:id" element={<EventParticipation />} />
             <Route path="/dashboard/:id" element={<EventDashboard />} />
+            <Route path="/event/:id" element={<EventPage />} />
           </Routes>
         </main>
       </div>
